@@ -83,4 +83,23 @@ print(
 print(
     '2. output for the string.find(val) method (here provided val not present inside string) val = a ---->',
     str.find('a'))  # output: -1
+# if provided all three params value
+print(
+    '3. output for the string.find(val,startIndex,endIndex) method (here provided val present inside) val=l, startIndex = 6 and endIndex = 11 ---->',str.find('l',6,11)) #output: 9
 print('\n')
+# |-------------index()---------------|
+# index() method
+# Syntax
+# string.index(value,startIndex,endIndex) // return index of given value in given string
+# By default startIndex is 0 and endIndex is length of string
+# if provided only one params value
+print('|------index()---------|')
+print('\n')
+print('1. output for the string.index(val) here val = l --->',str.index('l')) # output: 2
+# if provided value not found in string will return value error
+# print('2. output for the string.index(val) here val = a return value error because val not present in given string --->',str.index('a')) # output: value error substring not found
+#if provided all three params value
+print(
+    '3. output for the string.index(val,startIndex,endIndex) here val = l startIndex = 6,endIndex = 11 --->',str.index('l', 6, 11))  # output: 9
+print('\n')
+
